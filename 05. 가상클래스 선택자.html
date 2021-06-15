@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>가상클래스 선택자</title>
+    <style>
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a:focus {
+            color: purple;
+        }
+
+        input:focus {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <!--선택자는 "아래"에 있을수록 우선순위가 높다.ex) active가 hover보다 위에 있을 경우 클릭해도 적용이 X.-->
+    <!-- link - 방문한 적이 없는 링크
+        visited - 방문한 적이 있는 링크
+        hover - 마우스를 롤오버 했을 때
+        active - 마우스를 클릭했을 때
+        focus - 탭을 눌렀을 때 -->
+</head>
+<body>
+    <a href="http://www.naver.com" target="_blank">방문한 곳</a>
+    <a href="http://www.naver.com">방문한 곳</a>
+    <input type="text" />
+</body>
+</html>
