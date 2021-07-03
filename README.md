@@ -1,5 +1,7 @@
 # 11.-CSS-holy-grail-practice
 
+CSS를 이용한 가장 기본적인 형식의 틀을 말한다.
+
 1. column 형식이 세로로 정렬해준다
 2. padding은 하나만 쓸 경우 상하좌우 모두 적용된다.
 3. shrink 0으로 창을 줄여도 줄어들지 않는다.
