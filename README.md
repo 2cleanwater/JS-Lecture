@@ -11,4 +11,4 @@ CSS를 이용한 가장 기본적인 형식의 틀을 말한다.
 
 7. align-items은 수직방향의 위치를 정한다.
 8. justify-content는 수평방향의 위치를 정한다.
-9. lign-items는 <!DOCTYPE html>일때 작동하지 않는다. 왜????
+9. align-items는 <!DOCTYPE html>일때 작동하지 않는다. 왜????
