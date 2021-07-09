@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        img {
+            transition: all 1s;
+        }
+        img:hover {
+            -webkit-filter: grayscale(100%) blur(3px);
+            -o-filter: grayscale(100%) blur(3px);
+            filter: grayscale(100%) blur(3px);
+        }
+        h1 {
+            -webkit-filter: blur(3px);
+            -o-filter: blur(3px);
+            filter: blur(3px);
+        }
+        /*
+            transition: all 1s 는 태그를 점차적으로 1s 후변경해준다.
+            filter 접두어: 
+            -webkit = 구글, 사파리에 적용
+            -o = 오페라에 적용
+            -moz = 파폭에 적용
+            -ms = 익스플로러에 적용(대부분 생략)
+        */
+    </style>
+</head>
+<body>
+    <h1>saruman</h1>
+    <img src="saruman.jpg" alt="saruaman" />
+</body>
+</html>
