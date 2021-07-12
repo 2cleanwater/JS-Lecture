@@ -1,7 +1,7 @@
 # 15.-css-background-filter
 
 
-1.background
+1. background
       background: tomato url('saruman.png') no-repeat fixed center;같은 축약형으로 사용 가능함.
 
 2. filter
