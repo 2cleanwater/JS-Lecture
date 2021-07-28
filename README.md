@@ -1,6 +1,7 @@
 # 05.-JS-class
 
 class 는 붕어빵 틀과 같다. = template
+
 object 는 앙꼬
 
 1. Class declarations
