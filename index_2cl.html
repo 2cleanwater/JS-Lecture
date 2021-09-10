@@ -8,10 +8,11 @@
     </head>
     <body>
         <!-- Logo -->
-        <img src="img/store.png" alt="Store" class="store" width="100"/>
+        <img src="img/store.png" alt="Store" class="store" width="300"/>
+        <br>
 
         <!-- Buttons -->
-        <select class="buttons">
+        <selection class="buttons">
             <button class="btn clothsbtn shirts">
                 <img 
                     src="img/White Shirts.png"
@@ -19,6 +20,7 @@
                     class="imgbtn"
                     data-key="type"
                     data-value="tshirt"
+                    width="100"
                 />
             </button>
             <button class="btn clothsbtn pants">
@@ -28,6 +30,7 @@
                     class="imgbtn"
                     data-key="type"
                     data-value="pants"
+                    width="100"
                 >
             </button>
             <button class='btn clothsbtn shoes'>
@@ -37,15 +40,25 @@
                     class="imgbtn"
                     data-key="type"
                     data-value="shoes"
+                    width="100"
                 >
             </button>
-            <button class="btn colorBtn blue">
-                <img
-                    src="img"
-                />
+            <button class="btn colorBtn blue" data-key="color" data-value="blue">
+                Blue
+            </button>
+            <button class="btn colorBtn white" data-key="color" data-value="white">
+                White
+            </button>
+            <button class="btn colorBtn white" data-key="color" data-value="black">
+                Black
+            </button>
+            <button class="btn colorBtn white" data-key="color" data-value="brown">
+                Brown
             </button>
 
-        </select>
+        </selection>
+        <!-- Items -->
+        <ul class="items"></ul>
     </body>
     <footer>
         
