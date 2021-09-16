@@ -27,3 +27,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.logo {
+    cursor: pointer;
+    transition: transform var(--animation-duration) ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
