@@ -1,0 +1,2 @@
+210910 : index_2cl
+selection 태그를 select로 해서 목록화 되어 이미지가 나타나지 않았던 점을 수정
