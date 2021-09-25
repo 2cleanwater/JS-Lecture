@@ -1,11 +1,13 @@
 :root {
     /* color */
-    --color-black: #3f454d;
+    --color-dark-gray: #3f454d;
+    --color-black: #000000;
     --color-white: #ffffff;
     --color-blue: #3b88c3;
     --color-yellow: #fbbe28;
     --color-pink: #fd7f84;
     --color-light-grey: #dfdfdf;
+    --color-brown: #DEB887;
 
     /* size */
     --base-space: 8px;
@@ -21,7 +23,7 @@
 
 body{
     height: 100vh;
-    background-color: var(--color-black);
+    background-color: var(--color-dark-gray);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +54,44 @@ body{
 }
 
 .colorBtn {
-    font-size: var(--font-size);
+    font-size: var(--font-size);  
+}
+
+.blue {
+    background-color: var(--color-blue);
+}
+
+.white {
+    background-color: var(--color-white);
+}
   
+.black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.brown { 
+    background-color: var(--color-brown);
+}
+
+.item {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: var(--base-space);
+    margin-bottom: var(--base-space);
+}
+  
+.item.invisible {
+    background-color: var(--color-white);
+    display: none;
+}
+  
+.item__thumbnail {
+    width: var(--size-thumbnail);
+    height: var(--size-thumbnail);
+}
+  
+.item__description {
+    margin-left: var(--base-space);
+    font-size: var(--font-size);
 }
