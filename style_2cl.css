@@ -73,6 +73,14 @@ body{
     background-color: var(--color-brown);
 }
 
+.items {
+    width: 60%;
+    height: 60%;
+    list-style: none;
+    padding-left: 0;
+    overflow-y: scroll;
+}
+
 .item {
     background-color: var(--color-white);
     display: flex;
