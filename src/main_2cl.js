@@ -6,13 +6,19 @@ function loaditems() {
     .then(json => json.items);
 }
 
+// 리스트 업데이트
 function displaytitems(items) {
     const container = document.querySelector('.items');
-    container.innerHTML = items.map(item => createHTMLString(item));
+    container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
 
 function createHTMLString(item) {
-    return
+    return `
+    <li class="item">
+        <img src="${item.image}" alt="${item.type}" class="item_thumbnail" width="100" />
+        <span class="item_description">${item.type}, ${item.color} </span>
+    </li>
+    `;
 }
 //main
 
