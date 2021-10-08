@@ -7,11 +7,12 @@ function loaditems() {
 }
 
 // 리스트 업데이트
-function displaytitems(items) {
+function displayitems(items) {
     const container = document.querySelector('.items');
     container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
 
+// 받은 데이터로 아이템 리스트 만들기
 function createHTMLString(item) {
     return `
     <li class="item">
@@ -20,12 +21,32 @@ function createHTMLString(item) {
     </li>
     `;
 }
+
+function onButtonClick(event, items) {
+    const target = event.target;
+    const key = target.dataset.key;
+    const value = target.dataset.value;
+
+    if (key == null || value == null) {
+        return;
+    }
+    displayItems(items.filter(item => item[key] === value));
+}
+
+
+function setEventListeners() {
+    const logo = document.querySelector('.logo');
+    const buttons = docoument.querySelector('.buttons');
+    logo.addEventListener('click', () => displayitems(items));
+    buttons.addEventListener('click', event => onButtonClick(evnet, items));
+}
+
 //main
 
 loaditems()
     .then(items => {
         console.log(items);
-        displaytitems(items);
-        // setEventListeners(items)
+        displayitems(items);
+        setEventListeners(items)
     })
     .catch(console.log);
