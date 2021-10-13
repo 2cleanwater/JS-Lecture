@@ -1,105 +1,104 @@
 :root {
-    /* color */
-    --color-dark-gray: #3f454d;
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-blue: #3b88c3;
-    --color-yellow: #fbbe28;
-    --color-pink: #fd7f84;
-    --color-light-grey: #dfdfdf;
-    --color-brown: #DEB887;
+  /* color */
+  --color-dark-gray: #3f454d;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+  --color-brown: #deb887;
 
-    /* size */
-    --base-space: 8px;
-    --size-button: 60px;
-    --size-border: 4px;
-    --size-thumbnail: 50px;
-    --font-size: 18px;
+  /* size */
+  --base-space: 8px;
+  --size-button: 60px;
+  --size-border: 4px;
+  --size-thumbnail: 50px;
+  --font-size: 18px;
 
-
-    /* animation */
-    --animation-duration: 300ms;
+  /* animation */
+  --animation-duration: 300ms;
 }
 
-body{
-    height: 100vh;
-    background-color: var(--color-dark-gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  height: 100vh;
+  background-color: var(--color-dark-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-    cursor: pointer;
-    transition: transform var(--animation-duration) ease;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
 }
 
 .btn {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: transform var(--animation-duration) ease;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
 }
 
 .btn:hover,
 .logo:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .imgBtn {
-    width: var(--size-button);
-    height: var(--size-button);
+  width: var(--size-button);
+  height: var(--size-button);
 }
 
 .colorBtn {
-    font-size: var(--font-size);  
+  font-size: var(--font-size);
 }
 
 .blue {
-    background-color: var(--color-blue);
+  background-color: var(--color-blue);
 }
 
 .white {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
 }
-  
+
 .black {
-    background-color: var(--color-black);
-    color: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
-.brown { 
-    background-color: var(--color-brown);
+.brown {
+  background-color: var(--color-brown);
 }
 
 .items {
-    width: 60%;
-    height: 60%;
-    list-style: none;
-    padding-left: 0;
-    overflow-y: scroll;
+  width: 60%;
+  height: 60%;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
 }
 
 .item {
-    background-color: var(--color-white);
-    display: flex;
-    align-items: center;
-    padding: var(--base-space);
-    margin-bottom: var(--base-space);
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
 }
-  
+
 .item.invisible {
-    background-color: var(--color-white);
-    display: none;
+  background-color: var(--color-white);
+  display: none;
 }
-  
+
 .item__thumbnail {
-    width: var(--size-thumbnail);
-    height: var(--size-thumbnail);
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
 }
-  
+
 .item__description {
-    margin-left: var(--base-space);
-    font-size: var(--font-size);
+  margin-left: var(--base-space);
+  font-size: var(--font-size);
 }
