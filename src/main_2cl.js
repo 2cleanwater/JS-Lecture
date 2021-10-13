@@ -1,13 +1,13 @@
 
 // Json에 있는 파일을 받아오는 것
-function loaditems() {
+function loadItems() {
     return fetch('data/data_2cl.json')
     .then(response => response.json())
     .then(json => json.items);
 }
 
 // 리스트 업데이트
-function displayitems(items) {
+function displayItems(items) {
     const container = document.querySelector('.items');
     container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
@@ -23,30 +23,31 @@ function createHTMLString(item) {
 }
 
 function onButtonClick(event, items) {
-    const target = event.target;
-    const key = target.dataset.key;
-    const value = target.dataset.value;
+    const dataset = event.target.dataset;
+    const key = dataset.key;
+    const value = dataset.value;
 
     if (key == null || value == null) {
         return;
     }
+
     displayItems(items.filter(item => item[key] === value));
-}
+    }
 
-
-function setEventListeners() {
-    const logo = document.querySelector('.logo');
-    const buttons = docoument.querySelector('.buttons');
-    logo.addEventListener('click', () => displayitems(items));
-    buttons.addEventListener('click', event => onButtonClick(evnet, items));
+function setEventListeners(items) {
+    const logo = document.querySelector('.store');
+    const buttons = document.querySelector('.buttons');
+    logo.addEventListener('click', () => displayItems(items));
+    buttons.addEventListener('click', event => onButtonClick(event, items));
 }
+    
+
 
 //main
 
-loaditems()
+loadItems()
     .then(items => {
-        console.log(items);
-        displayitems(items);
+        displayItems(items);
         setEventListeners(items)
     })
     .catch(console.log);
