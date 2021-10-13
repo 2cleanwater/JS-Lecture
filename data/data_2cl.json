@@ -1,25 +1,25 @@
 {
     "items": [
         {
-            "type": "tshrits",
+            "type": "tshirt",
             "color": "black",
             "gender": "male",
             "image": "img/Black Shirts.png"
         },
         {
-            "type": "tshrits",
+            "type": "tshirt",
             "color": "blue",
             "gender": "male",
             "image": "img/Blue Shirts.png"
         },
         {
-            "type": "tshrits",
+            "type": "tshirt",
             "color": "brown",
             "gender": "male",
             "image": "img/Brown Shirts.png"
         },
         {
-            "type": "tshrits",
+            "type": "tshirt",
             "color": "white",
             "gender": "male",
             "image": "img/White Shirts.png"
