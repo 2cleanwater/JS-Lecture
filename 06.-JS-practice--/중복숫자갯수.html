@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function solution(inputarr) {
+            let answer = [];
+            let countarr = [];
+            let count = 1;
+            let q = 0;
+            let anticount = 0;
+            for (let i = 1; i < inputarr.length; i++) {
+                if (inputarr[i - 1] == inputarr[i]) {
+                    count = count+1;
+                    countarr[q] = count;
+                    anticount = 1;
+                }
+                else {
+                    count = 1;
+                    q++;
+                }
+            }
+            countarr.forEach(function(element) {
+                if (element > 1) {
+                    answer.push(element);
+                }
+            })
+
+            if (anticount == 0) {
+                answer.push(-1);
+            }
+
+            return answer;
+        }
+
+        let arr = [1,1,1,2,2,3,4,4,6,6,7];
+        console.log(solution(arr));
+    </script>
+</body>
+</html>
