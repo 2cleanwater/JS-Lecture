@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        ul li {
+            color: red;
+        }
+
+        #lecture > li {
+            border: 1px solid red;
+            color: blue;
+        }
+
+        ul, ol {
+            background-color: powderblue;
+        }
+
+    </style>
+    <!--태그아래 바로 직속된 태그에만 적용하고 싶은 경우 > 를 사용한다.-->
+    <!-- border는 직속된 태그에만 적용되지만 color는 자손 모두에게 적용된다. (추후에 공부 예정)-->
+    <!-- 같은 속성을 적용시킬 땐 , 를 사용한다.-->
+</head>
+<body>
+    <ul>
+        <li>가가가</li>
+        <li>나나나</li>
+        <li>다다다</li>
+    </ul>
+    <ol id="lecture">
+        <li>AAA</li>
+        <li>
+            BBB
+            <ol>
+                <li>CCC</li>
+                <li>DDD</li>
+            </ol>
+        </li>
+        <li>EEE</li>
+    </ol>
+</body>
+</html>
