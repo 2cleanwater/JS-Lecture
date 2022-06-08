@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css selector</title>
+    <style>
+        html ol {
+            border: 1px solid black;
+            color: red;
+        }
+        /* html 아래 ol는 모두 red and black border*/
+        #idol>li>ul {
+            
+            color: blue;
+        }
+        /* idol 직속 아래 li > ul은 blue*/
+        /* id를 사용할땐 # */
+        .pink {
+            color: pink;
+            font-size: 25px;
+        }
+        /* class를 사용할 땐 . */
+        /* px로 폰트사이즈를 조절하면 값이 고정된다.(브라우저 설정 변경에도 바뀌지않음)*/
+        h1 {
+            color:rgb(128 128 128);
+        }
+        /* rgb (255, 255, 255) */
+        h2, h3 {
+            color:#ff6a00;
+            font-size: 2rem;
+        }
+        /* 태그에 ,를 붙이면 한번에 속성 변경*/
+        /* 기본폰트사이즈 * rem = 폰트 크기 (브라우저 설정 변경시 바뀜)*/
+        textarea:focus {
+            background-color: black;
+            color: white;
+        }
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: yellow !important;
+        }
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>This should be gray</h1>
+
+    <ol>
+        <li>This should be red and black border</li>
+        <li>
+            This should be red and black border
+            <ul>
+                <li>This should be red</li>
+                <li>This should be red</li>
+                <!-- red는 상속되어 적용 O, border는 상속되지 않아 적용X-->
+            </ul>
+        </li>
+        <li>This should be red and black border</li>
+    </ol>
+
+    <h2>This should be orange</h2>
+
+    <ol id="idol">
+        <li>This should be red and black border</li>
+        <li>
+            This should be red and black border
+            <ul>
+                <li>This should be blue</li>
+                <li>This should be blue</li>
+                <!-- 캐스케이딩 우선적용순위에 의해 blue-->
+            </ul>
+        </li>
+        <li>This should be red and black border</li>
+    </ol>
+    <ul>
+        <li><a href="css selector.html" target="_blank">This should be blue,purple,yellow and green</a></li>
+    </ul>
+
+    <h3>This should be orange</h3>
+    <ul>
+        <li class="pink">This should be pink</li>
+        <li><a href="css selector.html" target="_blank">This should be blue,purple,yellow and green</a></li>
+    </ul>
+    <textarea cols="70" rows="2">This should be white text, black background</textarea>
+    <ul>
+        <li>1. style attribute</li>
+        <li>2. id selector</li>
+        <li>3. class selector</li>
+        <li>4. tag selector</li>
+        <!--상세할수록 우선순위가 높아진다-->
+    </ul>
+</body>
+</html>
