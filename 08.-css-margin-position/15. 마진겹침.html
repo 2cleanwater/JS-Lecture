@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>마진겹침</title>
+    <!--마진겹칩은 margin 값이 서로 사이에 겹치는것을 말한다.-->
+    <!--마진은 겹친것중 큰 값이 기준이 된다.-->
+    <style>
+        #empty{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            /*border:1px solid tomato;*/
+        }
+        /*margin top이 100이상이 되면 normal이 움직인다.*/
+        /*margin bottom이 50이하가 되면 normal이 움직인다.*/
+        /*margin 값이 큰게 기준이 된다.*/
+        #normal {
+            background-color: powderblue;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="empty"></div>
+    <!--내용이 들어가있으면 보더를 체크해둔것과 같다.-->
+    <div id="normal">normal</div>
+</body>
+</html>

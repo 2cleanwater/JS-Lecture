@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+            html {
+                border: 1px solid gray;
+            }
+
+            div {
+                border: 5px solid tomato;
+                margin: 10px;
+            }
+
+            #me {
+                position: relative;
+                left: 100px;
+                right: 100px;
+                bottom: 100px;
+                top: 100px;
+            }
+            /*기본 포지션은 static이고 relative일 때 지정된 값으로 움직인다.*/
+            /*left>right, top>bottom 순서는 상관하지 않는다.*/
+        </style>
+    </head>
+    <body>
+        <div id="other">other</div>
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </body>
+</html>
