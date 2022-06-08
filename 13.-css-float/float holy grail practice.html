@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .container {
+            width: 590px;
+            border: 1px solid black;
+            box-sizing:border-box;
+            margin: auto;
+        }
+        /*
+            전체의 width가 맞지 않으면 float에 의해 배열이 어긋난다.
+        */
+        header {
+            border-bottom: 1px solid black;
+        }
+        nav {
+            float: left;
+            width: 120px;
+            border-right: 1px solid black;
+        }
+        article {
+            float: left;
+            width: 300px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 10px;
+            margin-left: -1px;
+        }
+        /*
+            margin-left를 하는 이유 : border를 설정해주면 각자의 내용 길이에 맞도록 설정되어
+            각각 다 적용해줘야하는데 그렇게 되면 border 두께가 있어 겹쳐지지않기 때문이다.
+        */
+        aside {
+            float: left;
+            width: 120px;
+            border-left: 1px solid black;
+            margin-left: -1px;
+        }
+        footer {
+            clear: both;
+            border-top: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SARUMAN</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>Sa</li>
+                <li>Ru</li>
+                <li>Man</li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Trolling</h2>
+            Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo Trolololololololo
+        </article>
+        <aside>
+            AD
+        </aside>
+        <footer>
+            copyright
+        </footer>
+    </div> 
+
+</body>
+</html>
