@@ -1,0 +1,76 @@
+{
+    "items": [
+        {
+            "type": "tshirt",
+            "color": "black",
+            "gender": "male",
+            "image": "img/Black Shirts.png"
+        },
+        {
+            "type": "tshirt",
+            "color": "blue",
+            "gender": "male",
+            "image": "img/Blue Shirts.png"
+        },
+        {
+            "type": "tshirt",
+            "color": "brown",
+            "gender": "male",
+            "image": "img/Brown Shirts.png"
+        },
+        {
+            "type": "tshirt",
+            "color": "white",
+            "gender": "male",
+            "image": "img/White Shirts.png"
+        },
+        {
+            "type": "pants",
+            "color": "black",
+            "gender": "male",
+            "image": "img/Black Pants.png"
+        },
+        {
+            "type": "pants",
+            "color": "blue",
+            "gender": "male",
+            "image": "img/Blue Pants.png"
+        },
+        {
+            "type": "pants",
+            "color": "brown",
+            "gender": "male",
+            "image": "img/Brown Pants.png"
+        },
+        {
+            "type": "pants",
+            "color": "white",
+            "gender": "male",
+            "image": "img/White Pants.png"
+        },
+        {
+            "type": "shoes",
+            "color": "black",
+            "gender": "male",
+            "image": "img/Black Shoes.png"
+        },
+        {
+            "type": "shoes",
+            "color": "blue",
+            "gender": "male",
+            "image": "img/Blue Shoes.png"
+        },
+        {
+            "type": "shoes",
+            "color": "brown",
+            "gender": "male",
+            "image": "img/Brown Shoes.png"
+        },
+        {
+            "type": "shoes",
+            "color": "white",
+            "gender": "male",
+            "image": "img/White Shoes.png"
+        }
+    ]
+}
